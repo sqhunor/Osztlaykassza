@@ -5,8 +5,8 @@ Tervek:
 -	2 - Névsor (befizetett pénzek)
 -	3 - Számlatörténet
 -	4 - Számlán lévő egyenleg	
--
--
+
+
 - befizetések
 - kiadások
 - név lista befizetett pénekkel
