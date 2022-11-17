@@ -1,6 +1,9 @@
 from os import system
 from data import * 
 
+nevek = []
+osszegek = []
+
 
 filename= 'data.csv'
 
@@ -17,21 +20,24 @@ def menu():
 def loadNameList():
     file = open(filename, 'r', encoding='utf-8 ')
     global cimsor
+    global nevek
     cimsor = file.readline()
     for row in file:
         splitted = row.strip().split(';')
-        nevek[splitted[0]] = int(splitted[1])
+        nevek.append(splitted[0])
+        osszegek.append(splitted[1])
     file.close()
     
 def  showNameList():
     system('cls')
-    print('Versenyzők')
-    for nev in nevsor:
-        print(f'\t{nev}')
+    print('Névsor:')
+    file = open
+    
     input()
 
 def addMoney():
     system('cls')
     print('Befizetés:')
     nev = input('Név:')
-    osszeg = float.(input('Összeg:'))
+    osszeg = float(input('Összeg:'))
+    pass

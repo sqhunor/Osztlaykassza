@@ -2,6 +2,7 @@ from functions import *
 
 choice = ''
 while choice != '0':
+    loadNameList()
     choice = menu()
     if choice == '1':
         addMoney()
